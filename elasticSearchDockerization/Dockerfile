@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:17.04
 MAINTAINER admin <admin@xyz.com>
 
 #oracle 8 installation
@@ -34,3 +34,5 @@ CMD ["/elasticsearch/bin/elasticsearch"]
 
 EXPOSE 9200
 EXPOSE 9300
+
+#docker run -d -p 9200:9200 -p 9300:9300 --name elasticsearch devendhar/elasticsearch:latest 
