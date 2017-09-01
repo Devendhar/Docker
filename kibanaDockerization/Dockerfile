@@ -14,3 +14,5 @@ ENV PATH /usr/share/kibana/bin:$PATH
 CMD ["kibana"]
 
 EXPOSE 5601
+
+#docker run --link elasticsearch -d -p 5601:5601 --name kibana devendhar/kibana:17.04

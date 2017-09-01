@@ -27,3 +27,5 @@ CMD ["/logstash/bin/logstash", "-f", "/logstash/config/logstash-filter.conf"]
 
 EXPOSE 5044
 
+#docker run --link elasticsearch -d -p 5044:5044 --name logstash devendhar/logstash:17.04
+#docker rename <containerID> <new Name>
